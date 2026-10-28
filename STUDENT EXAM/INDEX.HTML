@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Examination Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>STUDENT TEST PORTAL</h1>
+
+        <!-- Student Registration -->
+
+        <div id="registration">
+
+            <h2 id="timer">Registration</h2>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <select id="studentClass">
+                <option value="">Select Class</option>
+                <option>JSS 1</option>
+                <option>JSS 2</option>
+                <option>JSS 3</option>
+                <option>SSS 1</option>
+                <option>SSS 2</option>
+                <option>SSS 3</option>
+            </select>
+
+            <select id="subject">
+                <option value="">Select Subject</option>
+                <option>Coding</option>
+               
+            </select>
+
+            <button onclick="startExam()">
+                Start Examination
+            </button>
+
+        </div>
+
+
+        <!-- Examination Section -->
+
+        <div id="examSection" class="hidden">
+
+            <h2 id="examTitle"></h2>
+
+            <p id="studentInfo"></p>
+
+            <h2 id="timer">Time Remaining: 10:00</h2>
+
+            <form id="examForm"></form>
+
+            <button onclick="submitExam()">
+                Submit Examination
+            </button>
+
+        </div>
+
+
+        <!-- Result Section -->
+
+        <div id="resultSection" class="hidden">
+
+            <h2>Examination Result</h2>
+
+            <p id="resultText"></p>
+
+            <p id="saveStatus"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
